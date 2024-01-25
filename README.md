@@ -34,7 +34,7 @@ study_results = pd.read_csv(study_results_path)
 
  pymaceutical_complete = pd.merge(mouse_metadata, study_results, how="left", on=["Mouse ID", "Mouse ID"])
 
-# Display the data table for preview in the dataframe
+Display the data table for preview in the dataframe
 
 pymaceutical_complete
 
