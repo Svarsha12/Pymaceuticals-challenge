@@ -11,25 +11,26 @@ Create a line plot and a scatter plot.
 Calculate correlation and regression.
 Submit your final analysis.
 
-# Files
+#Files
 Downloaded the files to help get started
 Created jupyter notebook pymaceuticals.ipynb for pymaceuticals analysis.
 
-# Before starting, run all the dependencies 
+#Before starting, 
+run all the dependencies 
 import matplotlib.pyplot as plt
 import pandas as pd
 import scipy.stats as st
 import numpy as np
 from scipy.stats import linregress
 
-# Read  downloaded csv files 
+Read  downloaded csv files 
 mouse_metadata_path = "data/Mouse_metadata.csv"
 study_results_path = "data/Study_results.csv"
 
-# Read the mouse data and the study results
+Read the mouse data and the study results
 mouse_metadata = pd.read_csv(mouse_metadata_path)
 study_results = pd.read_csv(study_results_path)
- # Merge the both csv files 
+#Merge the both csv files 
 
  pymaceutical_complete = pd.merge(mouse_metadata, study_results, how="left", on=["Mouse ID", "Mouse ID"])
 
